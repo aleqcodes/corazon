@@ -4,6 +4,9 @@ Este proyecto es un juego interactivo para celebrar el Día de los Enamorados (o
 
 ![Vista previa del juego](favicon.png)
 
+
+👉 **DEMO ONLINE:** [https://aleq.me/corazon/](https://aleq.me/corazon/)
+
 ## 📋 Contenido
 
 - [Descripción](#descripción)
