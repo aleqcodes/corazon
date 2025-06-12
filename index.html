@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Día de los Enamorados ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <!-- Contenedor principal para el modo historia -->
+  <div id="story-container">
+    <!-- Pantalla 1: Introducción -->
+    <div id="story-screen-1" class="story-screen">
+      <h1>Hola Jos 💌</h1>
+      <p class="story-text">Te invito a un pequeño juego para celebrar nuestro cariño...</p>
+      <button id="next-btn-1" class="story-btn">Continuar ➡️</button>
+    </div>
+
+    <!-- Pantalla 2: Primera parte de la historia -->
+    <div id="story-screen-2" class="story-screen hidden">
+      <h1>Un juego especial ✨</h1>
+      <p class="story-text">Dicen que encontrar un corazón simboliza el amor verdadero que Dios nos enseña a compartir...</p>
+      <button id="next-btn-2" class="story-btn">Continuar ➡️</button>
+    </div>
+
+    <!-- Pantalla 3: Segunda parte de la historia -->
+    <div id="story-screen-3" class="story-screen hidden">
+      <h1>Una sorpresa te espera 🎁</h1>
+      <p class="story-text">Si encuentras el corazón, podrás descubrir un mensaje especial.</p>
+      <button id="next-btn-3" class="story-btn">Continuar ➡️</button>
+    </div>
+
+    <!-- Pantalla 4: Introducción al juego -->
+    <div id="story-screen-4" class="story-screen hidden">
+      <h1>¿Lista para jugar? 💝</h1>
+      <p class="story-text">Encuentra el corazón escondido entre los cuadros...</p>
+      <button id="start-game-btn" class="story-btn">¡Comenzar! 🎮</button>
+    </div>
+  </div>
+
+  <!-- Contenedor del juego original (inicialmente oculto) -->
+  <div id="game-container" class="hidden">
+    <h1>Encuentra el corazón escondido 💌</h1>
+    
+    <div id="grid"></div>
+
+    <!-- Esto se muestra solo cuando acierta -->
+    <div id="popup" class="hidden">
+      <p id="message">¿Me concederías el honor de compartir nuestro camino juntos? 💕</p>
+      <button id="yesBtn">Acepto 💘</button>
+      <button id="noBtn">Ahora no 🙈</button>
+    </div>
+  </div>
+
+  <!-- Sonido opcional para darle emoción -->
+  <audio id="winSound" src="https://www.myinstants.com/media/sounds/anime-wow-sound-effect.mp3"></audio>
+  <!-- Sonido para transiciones de historia -->
+  <audio id="storySound" src="https://www.myinstants.com/media/sounds/notification-sound-7062.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
